@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+
+	<!-- Инструкции для IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Отображать страницу в масштабе 100% -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="Страница-портфолио веб-разработчика">
+    <meta name="Keywords" content="Резюме, Портфолио, Лендинг, HTML, CSS, jQuery">
+	<meta name="google" content="notranslate">
+	
+	<title>Сайт - портфолио</title>
+
+	<!-- Нормализация стилей -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+	<!-- Собственные стили -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Подключение веб-шрифтов -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="shortcut icon" type="img/x-icon" href="img/favicon/favicon-16x16.png">
+
+	<!-- Подключение jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!-- HEADER -->
+	<header class="header">
+		<div class="container">
+			<nav class="nav" id="nav">
+				<a href="#" class="nav-link" data-scroll="#resume">Резюме</a>
+				<a href="#" class="nav-link" data-scroll="#portfolio">Портфолио</a>
+				<a href="#" class="nav-link" data-scroll="#footer">Контакты</a>
+			</nav>
+		</div>
+		<div class="header-content">
+			<div class="header_title">Сидельников Александр</div>
+			<div class="header_slogan">Верстка сайтов на HTML и CSS<br> HTML CSS jQuery</div>			
+		</div>	
+		<div class="header_arrow">
+			<i class="fa fa-chevron-down arrow" data-scroll="#footer"></i>
+		</div>	
+	</header>
+
+	<main>
+		<!-- RESUME -->
+		<section class="resume" id="resume">
+			<div class="container">
+				<h2 class="title">Резюме</h2>
+				<div class="resume-about">
+					<p class="name">Сидельников Александр Сергеевич</p>
+					<p class="location">26 лет, Тюмень, Росcия</p>
+				</div>
+				<div class="resume-description">
+					<div class="resume-item">
+						<div class="resume-title">Опыт работы</div>
+						<div class="work-experience">
+							<div class="period">Сентябрь 2017 — июнь 2018</div>
+							<div class="organization">ПАО "Сургутнефтегаз" структурное подразделение Сургутский научно-исследовательский и проектный институт "СургутНИПИнефть", <span class="position">Инженер-технолог</span></div>
+							<div class="region">Сургут</div>
+						</div>
+						<div class="work-experience">
+							<div class="period">Сентябрь 2015 — май 2016</div>
+							<div class="organization">АБС "Консалт", <span class="position">Инженер-программист</span></div>
+							<div class="region">Тюмень</div>
+						</div>
+					</div>
+					<div class="resume-item">
+						<div class="resume-title">Высшее образование</div>
+						<div class="education-description">
+							<div class="period">2015 — 2017</div>
+							<div class="institute">Тюменский индустриальный институт, <span class="region">Тюмень</span></div>
+							<div class="specialization">Автоматизация в строительстве, <span class="position">Магистратура</span></div>						
+						</div>
+						<div class="education-description">
+							<div class="period">2011 — 2015</div>
+							<div class="institute">Тюменский государственный архитектурно-строительный университет, <span class="region">Тюмень</span></div>
+							<div class="specialization">Информационные системы и технологии, <span class="position">Бакалавриат</span></div>						
+						</div>
+					</div>
+				</div> <!-- /resume-description-->
+				<div class="download">				
+					<a href="pdf/сидельников_александр_сергеевич.pdf" class="btn-resume" download target="_blank">
+						<i class="fa fa-download dwn"></i>
+						Скачать резюме
+					</a>				
+				</div>
+			</div> <!-- /container-->
+		</section> <!-- /resume-->
+
+
+		<!-- PORTFOLIO -->
+		<section class="portfolio" id="portfolio">
+			<div class="container">
+				<h2 class="title">Портфолио</h2>
+				<div class="row">
+					<div class="col-4">
+						<div class="portfolio_item">
+							<div class="portfolio_img">
+								<img src="img/portfolio/project_voyage.jpg" alt="Макет Voyage">
+							</div>
+							<div class="portfolio_title">
+								<a href="work/voyage/work-voyage.html">Макет Voyage</a>
+							</div>
+							<div class="portfolio_text">
+								<p>Верстка лендинга Voyage. Мобильная адаптивность. jQuery</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-4">
+						<div class="portfolio_item">
+							<div class="portfolio_img">
+								<img src="img/portfolio/project_activebox.jpg" alt="Макет ActiveBox">
+							</div>
+							<div class="portfolio_title">
+								<a href="work/activebox/work-activebox.html">Макет ActiveBox</a>
+							</div>
+							<div class="portfolio_text">
+								<p>Верстка лендинга ActiveBox. Мобильная адаптивность. jQuery</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-4">
+						<div class="portfolio_item">
+							<div class="portfolio_img">
+								<img src="img/portfolio/project_stranica_portfolio.jpg" alt="Личный сайт портфолио">
+							</div>
+							<div class="portfolio_title">
+								<a href="work/site-portfolio/work-stranica_portfolio.html">Личный сайт портфолио</a>
+							</div>
+							<div class="portfolio_text">
+								<p>Верстка личного сайта портфолио на котором вы сейчас находитесь.</p>
+							</div>
+						</div>
+					</div>
+				</div> <!-- row -->
+			</div> <!-- container -->
+		</section> <!-- portfolio -->
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<p class="footer_name">Сидельников Александр</p>
+					<p>HTML верстка и разработка сайтов</p>					
+				</div>
+				<div class="col-4">
+					<p class="footer_social">Мои профили в социальных сетях:</p>
+					<p class="footer_social-icons">
+						<a href="https://vk.com/alexander_sidelnikov" target="_blank">
+							<i class="fa fa-vk"></i>
+						</a>						
+						<a href="https://www.instagram.com/alexander_sidelnikov/?hl=ru" target="_blank">
+							<i class="fa fa-instagram"></i>
+						</a>
+						<a href="#" target="_blank">
+							<i class="fa fa-github"></i>
+						</a>						
+					</p>					
+				</div>
+				<div class="col-4">
+					<div><a href="mailto:alexander.sidelnikov.work@gmail.com" class="btn" target="_blank">связаться gmail</a></div>
+					<p>По вопросам трудоустройства писать на почту</p>					
+				</div>
+			</div> <!-- row -->			
+		</div> <!-- container -->
+	</footer> <!-- footer -->
+
+	<!-- User script -->
+	<script src="js/main.js"></script>
+
+
+</body>
+</html>
