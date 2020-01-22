@@ -229,6 +229,13 @@ a {
 
 .portfolio_item {
 	margin-bottom: 20px;
+	text-decoration: none;
+	color: #000;
+	transition: underline 0.2s ease-out;
+}
+
+.portfolio_item:hover {
+	cursor: pointer;	
 }
 
 .portfolio_img {
@@ -238,6 +245,7 @@ a {
 .portfolio_img img {
 	max-width: 100%;
 	height: auto;
+	transition: transform 0.2s ease-out;
 }
 
 .portfolio_title {
@@ -246,20 +254,17 @@ a {
 	margin-bottom: 5px;
 }
 
-.portfolio_title a {
-	text-decoration: none;
-	color: #000;
-	transition: underline 0.2s ease-out;
+.portfolio_item:hover .portfolio_title {
+	color: #0052c2;	
+	text-decoration: underline;
 }
 
-.portfolio_title a:hover {
-	cursor: pointer;
-	text-decoration: underline;
-	color: #0052c2;
+.portfolio_item:hover .portfolio_img img {
+	transform: scale(1.1);
 }
 
 .portfolio_text p {	
-	margin-bottom: 15px;
+	margin-bottom: 15px;	
 }
 
 /*FOOTER*/
