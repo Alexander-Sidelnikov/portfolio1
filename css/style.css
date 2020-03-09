@@ -38,18 +38,15 @@ a {
 
 .row {
 	display: flex;
-}
-
-.col-4 {	
-	width: 360px;
-	margin-right: 30px;	
 	flex-wrap: wrap;
 }
 
-.col-4:last-child {
-	margin-right: 0;
+.col-4 {
+	width: 100%;	
+	max-width: 360px;	
+	margin-bottom: 30px;
+	padding: 0 15px;
 }
-
 
 /*HEADER*/
 .header {
@@ -244,9 +241,7 @@ a {
 
 .portfolio_img img {
 	max-width: 100%;
-	height: auto;
-	/* min-height: 230px; */
-	/* transition: transform 0.2s ease-out; */
+	height: auto;	
 	transition:all .2s ease 0s;
     border-radius: 8px;
 }
@@ -260,16 +255,12 @@ a {
 .portfolio_item:hover .portfolio_title {
 	color: #0052c2;
 	text-decoration: underline;
-} 
+}
 
-
-/* 
-.portfolio_item:hover .portfolio_img img {
-	/* transform: scale(1.1);
-	transform:translate(0, -8px);    
-    box-shadow: 0 14px 28px rgb(0, 210, 174), 0 10px 10px rgba(0,0,0,0.22);
-} 
-*/
+.portfolio_item:hover .portfolio_img-two-wheels img {
+	transform:translate(0, -8px);
+	box-shadow: 0 14px 28px rgb(250, 211, 200), 0 10px 10px rgba(0,0,0,0.22);   
+}
 
 .portfolio_item:hover .portfolio_img-voyage img {
 	transform:translate(0, -8px);    
@@ -281,9 +272,9 @@ a {
 	box-shadow: 0 14px 28px rgb(36, 42, 76), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.portfolio_item:hover .portfolio_img-two-wheels img {
+.portfolio_item:hover .portfolio_img-stranica img {
 	transform:translate(0, -8px);
-	box-shadow: 0 14px 28px rgb(250, 211, 200), 0 10px 10px rgba(0,0,0,0.22);   
+	box-shadow: 0 14px 28px rgb(78, 130, 154), 0 10px 10px rgba(0,0,0,0.22);   
 }
 
 .portfolio_text p {	
@@ -364,16 +355,13 @@ p.footer_social-icons a:hover {
 		width: 100%;
 	}
 
-	.row {
-		display: block;
+	.row {		
+		justify-content: center;
 	}
 
 	.col-4 {		
-		width: 100%;
-		margin: 0;
-		margin-bottom: 30px;
-		padding: 0 15px;
-		text-align: center;	
+		text-align: center;
+		padding: 0 10px;	
 	}
 
 	/* HEADER */

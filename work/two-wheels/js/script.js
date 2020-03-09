@@ -93,10 +93,9 @@ $(document).ready(function(){
       scrollTop: sectionPosition - 70      
     }, 700);
 
-  })    
-
-})
-
+  })
+  
+  
 
 // Табы продуктов
 const tabs = document.querySelectorAll('[data-tab]')
@@ -114,6 +113,53 @@ function tabsClick(){
     item.classList.remove('show')
   })
   document.getElementById(tabId).classList.toggle('show')
+  
+}
+
+
+// Модальное окно
+const modalBtn = document.querySelectorAll('[data-modal]')
+
+modalBtn.forEach(modalHandler)
+
+function modalHandler(item){
+  item.addEventListener('click', openModal)
+}
+
+function openModal(){
+  event.preventDefault()  
+  const modalId = this.dataset.modal
+  const modal = document.getElementById(modalId)
+  modal.classList.add('fade-block--visible')
+
+  document.body.style.overflow = 'hidden'
+
+  const closeBtn = modal.querySelector('[data-modal-close]')
+  closeBtn.addEventListener('click', function(){
+    modal.classList.remove('fade-block--visible')
+  })
+
+  modal.addEventListener('click', function(){
+    document.body.style.overflow = 'auto'
+    modal.classList.remove('fade-block--visible')       
+  })
+
+  modal.querySelector('.modal-window').addEventListener('click', function(event){
+    document.body.style.overflow = 'auto'
+    event.stopPropagation()
+  })
 
 
 }
+
+
+
+
+
+
+
+
+
+})
+
+

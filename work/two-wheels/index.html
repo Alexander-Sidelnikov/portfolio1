@@ -23,8 +23,7 @@
                 <div class="top-panel_inner height-100">
                     <p class="top-panel_text">Free Delivery: Take advantage of our time to save event.</p>
                     <div class="top-panel_icons">
-                        <a href="#" target="_blank" class="top-panel_link">
-                            <!-- <img class="icon" src="img/top-panel_icons/account.svg" alt="Account"> -->
+                        <a href="#" target="_blank" class="top-panel_link" data-modal="modal-1">
                             <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
                                 <defs>
                                   <style>
@@ -35,27 +34,57 @@
                                   </style>
                                 </defs>
                                 <path id="Path_184" data-name="Path 184" class="cls-1" d="M1128.75,24.75a13.5,13.5,0,1,0,13.5,13.5A13.506,13.506,0,0,0,1128.75,24.75Zm-6.66,21.977c0.58-1.215,4.12-2.4,6.66-2.4s6.09,1.188,6.65,2.4A10.7,10.7,0,0,1,1122.09,46.727Zm15.25-1.957c-1.94-2.349-6.62-3.146-8.59-3.146s-6.66.8-8.59,3.146A10.8,10.8,0,1,1,1137.34,44.771Zm-8.59-14.621a4.725,4.725,0,1,0,4.72,4.725A4.717,4.717,0,0,0,1128.75,30.15Zm0,6.75a2.025,2.025,0,1,1,2.02-2.025A2.027,2.027,0,0,1,1128.75,36.9Z" transform="translate(-1115.25 -24.75)"/>
-                              </svg>
-                              
-                            
+                              </svg>               
                         </a>
+                        <!-- MODAL-WINDOW -->
+                        <div class="fade-block" id="modal-1">
+                            <div class="modal-window">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Login</h5>
+                                        <div class="close" data-modal-close></div>
+                                    </div>
+                                    <form class="card-body">
+                                        <div class="form-group">
+                                            <label class="form-text-label" for="inputEmail">Email address</label>
+                                            <input type="email" class="input" id="inputEmail" aria-describedby="emailHelp" placeholder="Email" required>
+                                            <small id="emailHelp" class="form-small-text">Enter your email</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-text-label" for="inputPass">Password</label>
+                                            <input type="password" class="input" id="inputPass" placeholder="Password" required>
+                                            <small id="passHelp" class="form-small-text">Password must be 10 characters</small>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="inputCheck">
+                                            <label class="form-check-label" for="inputCheck">Remember me
+                                            </label>
+                                        </div>
+                                        <button type="button" class="login-btn">Login</button>
+                                        <div class="card-footer">Dont't have an account? <a href="#" target="_blank" class="card-footer-link">Sign Up</a></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div><!--/modal-window-->
+
+                        <form class="search">
+                            <input type="search" placeholder="Seacrh" class="search__input">
+                            <button type="button" class="top-panel_link search__btn">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="21.88" height="21.875" viewBox="0 0 21.88 21.875">
+                                    <defs>
+                                      <style>
+                                        .cls-1 {
+                                          fill: #f8f8f8;
+                                          fill-rule: evenodd;
+                                        }
+                                      </style>
+                                    </defs>
+                                    <path id="Path_181" data-name="Path 181" class="cls-1" d="M1185.62,40.75h-0.98l-0.35-.337a8.194,8.194,0,1,0-.88.875l0.34,0.35v0.988l6.25,6.238L1191.86,47Zm-7.5,0a5.625,5.625,0,1,1,5.63-5.625A5.615,5.615,0,0,1,1178.12,40.75Z" transform="translate(-1170 -27)"/>
+                                </svg>           
+                            </button>
+                        </form>
+                        
                         <a href="#" target="_blank" class="top-panel_link">
-                            <!-- <img class="icon" src="img/top-panel_icons/search.svg" alt="Search"> -->
-                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="21.88" height="21.875" viewBox="0 0 21.88 21.875">
-                                <defs>
-                                  <style>
-                                    .cls-1 {
-                                      fill: #f8f8f8;
-                                      fill-rule: evenodd;
-                                    }
-                                  </style>
-                                </defs>
-                                <path id="Path_181" data-name="Path 181" class="cls-1" d="M1185.62,40.75h-0.98l-0.35-.337a8.194,8.194,0,1,0-.88.875l0.34,0.35v0.988l6.25,6.238L1191.86,47Zm-7.5,0a5.625,5.625,0,1,1,5.63-5.625A5.615,5.615,0,0,1,1178.12,40.75Z" transform="translate(-1170 -27)"/>
-                            </svg>
-                              
-                        </a>
-                        <a href="#" target="_blank" class="top-panel_link">
-                            <!-- <img class="icon" src="img/top-panel_icons/cart.svg" alt="Cart"> -->
                             <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
                                 <defs>
                                   <style>
@@ -66,7 +95,7 @@
                                   </style>
                                 </defs>
                                 <path id="Path_2" data-name="Path 2" class="cls-1" d="M1238.19,39.5a2.479,2.479,0,0,0,2.18-1.287l4.48-8.113a1.247,1.247,0,0,0-1.09-1.85h-18.5l-1.17-2.5H1220v2.5h2.5l4.5,9.488-1.69,3.05a2.506,2.506,0,0,0,2.19,3.712h15V42h-15l1.37-2.5h9.32Zm-11.74-8.75h15.19L1238.19,37h-8.78Zm1.05,15a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,1227.5,45.75Zm12.5,0a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,1240,45.75Z" transform="translate(-1220 -25.75)"/>
-                            </svg>                     
+                            </svg>                 
                         </a>
                     </div>
                 </div><!--top-panel_inner-->
